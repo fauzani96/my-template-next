@@ -66,7 +66,7 @@ const Navbar = () => {
         <AppBar>
           <Container maxWidth="lg" sx={{display: 'block'}}>
             <Toolbar disableGutters>
-              <AdbIcon sx={{display: {xs: 'none', md: 'flex'}, mr: 1}} />
+              <AdbIcon sx={{display: 'flex', mr: 1}} />
               <Typography
                 variant="h6"
                 noWrap
@@ -74,7 +74,7 @@ const Navbar = () => {
                 href="/"
                 sx={{
                   mr: 2,
-                  display: {xs: 'none', md: 'flex'},
+                  display: 'flex',
                   fontFamily: 'monospace',
                   fontWeight: 700,
                   letterSpacing: '.3rem',
@@ -94,7 +94,9 @@ const Navbar = () => {
                   </Button>
                 ))}
               </Box>
-              <Box sx={{flexGrow: 0}}>
+              <Box sx={{flexGrow: 4}} />
+              <Box sx={{flexGrow: 1}}>
+                <SearchIcon />
                 {/* <Search>
                   <SearchIconWrapper>
                     <SearchIcon />
